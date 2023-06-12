@@ -11,7 +11,7 @@ app.get("/help", (req, res) => {
 });
 
 app.get("/versions", (req, res) => {
-    res.send("1.0.5 1.0.6");
+    res.send("v1.0.5 v1.0.6");
 });
 
 app.listen(3000, () => {
