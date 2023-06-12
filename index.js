@@ -3,7 +3,15 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.send("Welcome to the Radium API! You can view all commands on the /help route.");
+});
+
+app.get("/help", (req, res) => {
+    res.send("Commands: /help, /versions");
+});
+
+app.get("/versions", (req, res) => {
+    res.send("1.0.5 1.0.6");
 });
 
 app.listen(3000, () => {
